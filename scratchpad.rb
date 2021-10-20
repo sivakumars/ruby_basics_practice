@@ -62,22 +62,86 @@
 
 ############################
 
-vehicles = {
-  car: {
-    type: "sedan",
-    color: "blue",
-    year: 2003
-  },
-  truck: {
-    type: "pickup",
-    color: "red",
-    year: 1998
-  }
-}
+# vehicles = {
+#   car: {
+#     type: "sedan",
+#     color: "blue",
+#     year: 2003
+#   },
+#   truck: {
+#     type: "pickup",
+#     color: "red",
+#     year: 1998
+#   }
+# }
 
 
-puts vehicles
+# puts vehicles
 
-car = [[:type, 'sedan'],[:color, 'blue'],[:year, 2003]]
+# car = [[:type, 'sedan'],[:color, 'blue'],[:year, 2003]]
 
-p car
+# p car
+
+################################
+
+
+# def staggered_case(string)
+#   staggered_string = string.split('').each_with_index.map do |character, index| 
+#     if index.even? && character.match(/[a-zA-Z]/)
+#       # puts "Is #{character} even? #{index.even?}"
+#       character.upcase
+#     else 
+#       character.downcase
+#     end
+#   end
+
+#   staggered_string.join()
+# end
+
+# p staggered_case('I Love Launch School!') == 'I LoVe lAuNcH ScHoOl!'
+# p staggered_case('ALL_CAPS') == 'AlL_CaPs'
+# p staggered_case('ignore 77 the 444 numbers') == 'IgNoRe 77 ThE 444 NuMbErS'
+
+##########################
+
+# def string_lengths(sentence)
+#   strings = sentence.split
+#   lengths = []
+#   counter = 1
+
+#   until counter == strings.size do
+#     word_length = strings[counter - 1].length
+#     lengths.push(word_length)
+#     counter += 1
+#   end
+
+#   lengths
+# end
+
+# p string_lengths("welcome to launch school")
+
+##########################
+
+# outer_arr = [1,2,3,4,2]
+# outer_number = 2
+
+# def method_test_array(arr_param)
+#   arr_param.delete(2)
+# end
+
+# def method_test_number(num_param)
+#   num_param.to_s
+#   puts num_param.class
+# end
+
+# method_test_array(outer_arr)
+# method_test_number(outer_number)
+
+# p outer_arr
+# p outer_number.class
+
+def snake_case_method(param = "default")
+  puts "indented at two spaces #{param}"
+end
+
+snake_case_method()
